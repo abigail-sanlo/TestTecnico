@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<header>
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#!" class="brand-logo center">¡BUSCA TU RESTAURANTE!</a>
+        </div>
+        <div class="container section">
+            <div class="row">
+                <div class="col s12">
+
+                    <div class="carousel carousel-slider">
+                        <a href="" class="carousel-item">
+                            <img class="responsive-img" src="rest.jpg" alt="">
+                        </a> 
+                        <a href="" class="carousel-item">
+                            <img  class="responsive-img"src="waffle.jpg" alt="">
+                        </a> 
+                        <a href="" class="carousel-item">
+                            <img class="responsive-img" src="pizza.jpg" alt="">
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<body>
+    <div class="container">
+        <div class ="section">
+            <button class="btn red" id="boton">Busca por orden alfabetico</button>
+            <table class="centered responsive table">
+                <thead><th>Restaurantes</th></thead>
+                <tbody id="nombres">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+</body>
+<footer class="page-footer red">
+    <div class="container"> 
+        <h5>Esta es una prueba para Intelimetrica</h5>
+        <p class="grey-text text-lighten-4">Hecho por Abigail Sánchez</p>
+    </div>
+</footer>
+<script src="index.js"></script>
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+</script>
+<script>  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+        duration:600,
+        indicators:true
+    });
+  });
+</script>
+<script> 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
